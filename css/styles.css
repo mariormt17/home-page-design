@@ -75,11 +75,95 @@ header {
 
 /* MAIN STYLES */
 
-.container-info {
+main {
   width: 100%;
-  height: 500px;
-  background: #EFF3F5;
-  margin-top: 20px;
+  font-family: 'Nunito', sans-serif;
+  margin-top: 100px;
+}
+
+.main-body {
+  padding-bottom: 60px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background-image: url(../img/background-cover.svg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.container-main-info {
+  max-width: 400px;
+  z-index: 2;
+}
+
+.container-main-info h1 {
+  max-width: 400px;
+  font-size: 60px;
+  font-weight: 700;
+  color: #373737;
+}
+
+.container-main-info h2 {
+  font-size: 60px;
+  font-weight: 900;
+  color: #FEBA0B;
+  margin-top: -30px;
+}
+
+.container-main-info p {
+  margin-top: 10px;
+  color: #373737;
+}
+
+.container-main-info input[type="button"] {
+  padding: 10px 40px;
+  margin-top: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  color: white;
+  background-color: #FEBA0B;
+  border-radius: 20px;
+  box-shadow: 1px 1px 30px -5px #20202049;
+  cursor: pointer;
+  transition: box-shadow 300ms;
+}
+
+.container-main-info input[type="button"]:hover {
+  box-shadow: 1px 1px 30px -5px #20202085;
+}
+
+.container-main-vector {
+  position: relative;
+}
+
+.container-main-vector img {
+  position: absolute;
+  bottom: 50px;
+  right: 0px;
+  width: 550px;
+  animation: move-vector 8s ease-in-out infinite;
+}
+
+@keyframes move-vector {
+  0% {
+    transform: translateY(10px);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(10px);
+  }
 }
 
 .container-cards {
