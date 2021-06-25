@@ -17,6 +17,7 @@ header {
   top: 0;
   right: 0;
   z-index: 100;
+  transition: all 200ms;
 }
 
 .container-header {
@@ -37,7 +38,7 @@ header {
 }
 
 .container-header .logo-header img {
-  width: 80px;
+  width: 70px;
 }
 
 .container-nav {
@@ -64,6 +65,12 @@ header {
 .container-nav nav ul li a {
   color: #373737;
   font-size: 18px;
+}
+
+.nav-mod {
+  height: 70px;
+  box-shadow: 1px 1px 10px 0px #00000010;
+  background-color: white;
 }
 
 #home-button {
