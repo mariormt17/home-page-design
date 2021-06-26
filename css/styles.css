@@ -38,7 +38,14 @@ header {
 }
 
 .container-header .logo-header img {
-  width: 70px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.container-header .logo-header img:hover {
+  box-shadow: 0 0 3px 5px #eeeeee;
+  background-color: #eeeeee;
+  cursor: pointer;
 }
 
 .container-nav {
@@ -65,6 +72,16 @@ header {
 .container-nav nav ul li a {
   color: whitesmoke;
   font-size: 18px;
+}
+
+.container-nav nav ul li a:hover {
+  border: 2px solid #EFF3F5;
+  border-radius: 20px;
+  padding: 10px 5px;
+}
+
+.container-nav nav ul li:hover {
+  margin: 0px 13px;
 }
 
 .nav-mod {
@@ -107,6 +124,10 @@ header {
   padding: 10px 30px;
   color: white;
   border-radius: 20px;
+}
+
+#home-button:hover {
+  padding: 10px 35px;
 }
 
 /* MAIN STYLES */
