@@ -1,3 +1,4 @@
+// FUNCTION TO ADD NEW STYLE TO NAVBAR WHEN THE SCROLL DOWN
 window.onscroll = function () {
   scroll = document.documentElement.scrollTop;
   header = document.getElementById("header");
@@ -7,3 +8,23 @@ window.onscroll = function () {
     header.classList.remove('nav-mod');
   }
 }
+
+menu = document.getElementById("header");
+navbar = document.getElementById("navbar");
+body = document.getElementById("main");
+
+// FUNCTION TO SHOW THE NAVBAR WHEN THE HAMBURGER BUTTON WAS CLICKED
+document.getElementById("btn-header-responsive").addEventListener("click", function () {
+  menu.classList.toggle("move-content");
+  body.classList.toggle("move-content")
+  navbar.classList.toggle("move-navbar");
+})
+
+// FUNCTION TO RESTORE THE NAVBAR WHEN THE WINDOW HAS A WIDTH MAJOR THAN 760
+window.addEventListener("resize", function () {
+  if (window.innerWidth > 760) {
+    menu.classList.remove("move-content");
+    body.classList.remove("move-content")
+    navbar.classList.remove("move-navbar");
+  }
+})
