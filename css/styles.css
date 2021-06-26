@@ -294,12 +294,38 @@ header {
   background: #f7fbfd;
   border-radius: 20px;
   box-shadow: 0 0 60px 20px #f1f1f1;
+  perspective: 1000px;
 }
 
 .container-cards .box-card-father {
+  margin: 20px;
+}
+
+.container-cards .box-card-father:hover .card {
+  transform: rotateY(180deg);
+}
+
+.container-cards .box-card-father .card {
   width: 200px;
   height: 250px;
-  margin: 20px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 600ms;
+}
+
+.container-cards .box-card-father .card .card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.container-cards .box-card-father .card .card-back {
+  transform: rotateY(180deg);
+  background-color: white;
 }
 
 /* FOOTER STYLES */
