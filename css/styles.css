@@ -323,9 +323,29 @@ header {
   transform-style: preserve-3d;
 }
 
+.container-cards .box-card-father .card .card-front {
+  background-size: cover;
+  background-position: center;
+}
+
 .container-cards .box-card-father .card .card-back {
   transform: rotateY(180deg);
   background-color: white;
+}
+
+.container-cards .box-card-father .card .card-front .body-card-front {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container-cards .box-card-father .card .card-front .body-card-front h1 {
+  font-size: 20px;
 }
 
 /* FOOTER STYLES */
