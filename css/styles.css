@@ -73,6 +73,23 @@ header {
   background-color: white;
 }
 
+.btn-header-responsive {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: background 300ms;
+  display: none;
+}
+
+.btn-header-responsive:hover {
+  background-color: #f5f5f5;
+}
+
 #home-button {
   background-color: #359ef9;
   padding: 10px 30px;
@@ -260,4 +277,38 @@ footer {
   border: none;
   height: 1px;
   background-color: #7a7a7a;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 760px) {
+  .container-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-header-responsive {
+    display: flex;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    height: 100%;
+    background-color: #f1faff;
+    padding: 0px 40px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 20px 0px;
+  }
+
+
 }
