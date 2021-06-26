@@ -119,6 +119,7 @@ main {
   margin: auto;
   padding: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   position: relative;
   background-image: url(../img/background-cover.svg);
@@ -174,10 +175,11 @@ main {
 
 .container-main-vector img {
   position: absolute;
-  bottom: 50px;
+  bottom: 90px;
   right: 0px;
   width: 550px;
   animation: move-vector 8s ease-in-out infinite;
+  transition: all 300ms;
 }
 
 @keyframes move-vector {
@@ -316,5 +318,39 @@ footer {
 
   nav ul li {
     margin: 20px 0px !important;
+  }
+
+  .container-main-vector img {
+    transform: scale(0) !important;
+    animation: none !important;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .container-main-vector img {
+    position: absolute;
+    bottom: 90px;
+    width: 450px;
+    animation: move-vector 8s ease-in-out infinite;
+    transition: all 300ms;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .container-main-vector img {
+    position: absolute;
+    bottom: 90px;
+    width: 400px;
+    animation: move-vector 8s ease-in-out infinite;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .container-main-vector img {
+    position: absolute;
+    bottom: 100px;
+    width: 350px;
+    animation: move-vector 8s ease-in-out infinite;
+    transition: all 300ms;
   }
 }
