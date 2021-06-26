@@ -321,6 +321,7 @@ header {
   left: 0;
   backface-visibility: hidden;
   transform-style: preserve-3d;
+  border-radius: 20px;
 }
 
 .container-cards .box-card-father .card .card-front {
@@ -342,12 +343,50 @@ header {
   justify-content: center;
   align-items: center;
   color: white;
+  transform: translateZ(60px);
 }
 
 .container-cards .box-card-father .card .card-front .body-card-front h1 {
   font-size: 20px;
 }
 
+.container-cards .box-card-father .card .card-front .bg-card-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.container-cards .box-card-father .card .card-back .body-card-back {
+  padding: 10px;
+  text-align: center;
+  transform: translateZ(60px);
+}
+
+.container-cards .box-card-father .card .card-back .body-card-back p {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.container-cards .box-card-father .card .card-back .body-card-back input {
+  padding: 10px 40px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #58b0f6;
+  box-shadow: 1px 1px 30px -5px #58b0f6;
+  border-radius: 10px;
+  transition: box-shadow 600ms;
+}
+
+.container-cards .box-card-father .card .card-back .body-card-back input:hover {
+  box-shadow: 1px 1px 30px 0px #449de6;
+}
 /* FOOTER STYLES */
 
 footer {
