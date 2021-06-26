@@ -283,10 +283,23 @@ header {
   }
 }
 
+.title-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif
+}
+
+.title-cards h1 {
+  font-size: 60px;
+  color: #343434;
+  letter-spacing: 15px;
+}
+
 .container-cards {
   font-family: 'Lato', sans-serif;
   max-width: 1000px;
-  margin: 150px auto;
+  margin: 50px auto 100px;
   padding: 0px 20px;
   display: flex;
   flex-wrap: wrap;
