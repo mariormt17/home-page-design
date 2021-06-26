@@ -111,10 +111,13 @@ header {
 
 /* MAIN STYLES */
 
-main {
+.cover-section {
   width: 100%;
+  padding-bottom: 120px;
+  padding-top: 100px;
   font-family: 'Nunito', sans-serif;
-  margin-top: 100px;
+  position: relative;
+  overflow: hidden;
 }
 
 .bg-color {
@@ -125,14 +128,50 @@ main {
   top: 0;
 }
 
-.wave1 {
-  width: 100%;
+.wave {
+  width: 6000px;
   height: 100%;
   position: absolute;
   top: 150px;
   left: 0;
   background-image: url(../img/wave.svg);
   background-position: bottom;
+}
+
+.main-wave {
+  animation: main-wave-animation 7s linear infinite;
+}
+
+@keyframes main-wave-animation {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+.second-wave {
+  animation: second-wave-animation 7s linear -125ms infinite, displacement 7s ease -125ms infinite;
+  opacity: 0.5;
+}
+
+@keyframes second-wave-animation {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes displacement {
+  0%, 100% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
 }
 
 .main-body {
@@ -227,8 +266,7 @@ main {
   justify-content: center;
   max-width: 1000px;
   padding: 0px 20px;
-  margin: auto;
-  margin-top: 20px;
+  margin: 150px auto;
 }
 
 .container-cards .box-card {

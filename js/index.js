@@ -20,12 +20,10 @@ window.onscroll = function () {
 
 menu = document.getElementById("header");
 navbar = document.getElementById("navbar");
-body = document.getElementById("main");
 
 // FUNCTION TO SHOW THE NAVBAR WHEN THE HAMBURGER BUTTON WAS CLICKED
 document.getElementById("btn-header-responsive").addEventListener("click", function () {
   menu.classList.toggle("move-content");
-  body.classList.toggle("move-content");
   navbar.classList.toggle("move-navbar");
 })
 
@@ -33,7 +31,6 @@ document.getElementById("btn-header-responsive").addEventListener("click", funct
 window.addEventListener("resize", function () {
   if (window.innerWidth > 760) {
     menu.classList.remove("move-content");
-    body.classList.remove("move-content");
     navbar.classList.remove("move-navbar");
   }
 })
